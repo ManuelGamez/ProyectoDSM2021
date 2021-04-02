@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/m"
+    android:orientation="vertical"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -13,7 +14,7 @@
         android:layout_height="100dp"
         android:src="@drawable/logowhite"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="150dp"
         />
 
     <EditText
@@ -25,7 +26,7 @@
         android:padding="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:hint="Correo Electrónico"
+        android:hint="@string/register_correo"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -43,7 +44,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="6dp"
-        android:hint="Contraseña"
+        android:hint="@string/register_contraseña"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -63,7 +64,7 @@
         android:padding="17dp"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:text="Crear Cuenta"
+        android:text="@string/register_crear"
         android:textColor="@android:color/white"
         />
 
