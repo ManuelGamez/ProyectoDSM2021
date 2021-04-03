@@ -1,57 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/m"
+    android:background="@drawable/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_above="@+id/main_join_now_btn"
+        android:layout_height="120dp"
+        android:src="@drawable/splash_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="48dp"
-        android:src="@drawable/logowhite" />
+        android:layout_marginTop="150dp"
+        />
 
     <Button
         android:id="@+id/main_login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="200dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/buttons"
-        android:padding="20dp"
+        android:padding="17dp"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:text="@string/main_login"
         android:textColor="@android:color/white"
         />
 
+
     <Button
         android:id="@+id/main_join_now_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/main_login_btn"
-        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/main_login_btn"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/input_design"
-        android:padding="20dp"
+        android:background="@drawable/buttons"
+        android:padding="17dp"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:text="@string/main_registrarse"
         android:textColor="@android:color/white"
         />
-
 
 </RelativeLayout>
