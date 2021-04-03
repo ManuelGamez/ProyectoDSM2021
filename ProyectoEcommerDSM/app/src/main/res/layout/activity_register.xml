@@ -12,27 +12,25 @@
         android:id="@+id/register_applogo"
         android:layout_width="300dp"
         android:layout_height="120dp"
-        android:src="@drawable/splash_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        />
+        android:src="@drawable/splash_logo" />
 
     <EditText
         android:id="@+id/register_email_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_applogo"
-        android:background="@drawable/input_design"
-        android:padding="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
         android:hint="@string/register_correo"
         android:inputType="text"
+        android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="19sp"
-        />
+        android:textSize="19sp" />
 
 
     <EditText
@@ -40,17 +38,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_email_input"
-        android:background="@drawable/input_design"
-        android:padding="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
         android:hint="@string/register_contraseña"
         android:inputType="textPassword"
+        android:padding="20dp"
         android:textColor="@color/colorPrimaryDark"
         android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="19sp"
-        />
+        android:textSize="19sp" />
 
 
     <Button
@@ -58,15 +55,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_password_input"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/buttons"
         android:padding="17dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
         android:text="@string/register_crear"
+        android:textAllCaps="false"
         android:textColor="@android:color/white"
-        />
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:progressTint="@color/colorPrimaryDark"
+        android:visibility="gone" />
 
 </RelativeLayout>

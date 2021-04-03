@@ -15,7 +15,7 @@
         android:layout_height="120dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/splash_logo" />
 
     <EditText
@@ -105,5 +105,15 @@
         android:text="@string/login_google"
         android:textColor="@android:color/white"
         />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:progressTint="@color/colorPrimaryDark"
+        android:visibility="gone" />
 
 </RelativeLayout>
