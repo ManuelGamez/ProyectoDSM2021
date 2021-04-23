@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ProyectoEcommerDSM</string>
+    <string name="main_registrarse">Registrarse</string>
+    <string name="main_login">Iniciar Sesión</string>
+    <string name="register_correo">Correo Electrónico</string>
+    <string name="register_contraseña">Contraseña</string>
+    <string name="register_crear">Crear Cuenta</string>
+    <string name="login_correo">Correo Electrónico</string>
+    <string name="login_contraseña">Contraseña</string>
+    <string name="login_olvidarcontraseña">Olvidaste tu contraseña?</string>
+    <string name="login_iniciar">Iniciar Sesión</string>
+    <string name="login_google">Ingresar con Google</string>
+    <string name="forgot_correo">Correo Electrónico</string>
+    <string name="forgot_restablecer">Restablecer Contraseña</string>
 </resources>
