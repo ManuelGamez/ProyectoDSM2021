@@ -114,6 +114,13 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
         datosUsuario.put("Imagen",Foto);
         datosUsuario.put("ID",n);
         mRootReference.child("Articulos").push().setValue(datosUsuario);
+        //Notificacion de guardado
+        Toast toast = Toast.makeText(getApplicationContext(), "Datos guardados exitosamente!", Toast.LENGTH_LONG);
+        toast.show();
+        //Limpiando campos
+        mEditTextArticulo.getText().clear();
+        mEditTextDescripcion.getText().clear();
+        mEditTextPrecio.getText().clear();
     }
 
     //::::::::::::::::::::::: Metodo para Subir la imagen ::::::::::::::::::::::::::::::::::::
@@ -177,7 +184,7 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
             try{
                 Glide.with(this).load(account.getPhotoUrl()).into(fotoperfil);
             }catch (NullPointerException e){
-                Toast.makeText(getApplicationContext(),"image no encontrada", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Imagen no encontrada", Toast.LENGTH_LONG).show();
             }
             //Glide.with(this).load(account.getPhotoUrl()).into(photoImagenView);
             //Log.d("MIAPP",account.getPhotoUrl().toString());
