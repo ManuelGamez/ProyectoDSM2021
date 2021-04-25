@@ -33,6 +33,8 @@ La licenciante no puede revocar estas libertades en tanto usted siga los términ
 ## Enlaces de interés 👀
 
 * [Tablero en Trello] https://trello.com/b/foa9Fvci/proyectodsm-01-2021
+* [Manual de usuario en la nube] - https://drive.google.com/file/d/1gSfLuai8QZ9gKfQxb24Y_twbFtsd337H/view?usp=sharing
+* [Manual Técnico en la nube] - https://drive.google.com/file/d/1GotWv8Wd96FceQ3l27J89jNwBLxnNaZv/view?usp=sharing
 
 
 
