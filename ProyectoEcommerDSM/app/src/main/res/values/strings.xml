@@ -1,4 +1,5 @@
 <resources>
+    <!--Strings relacionados a inicio de sesión y recuperación de contraseña-->
     <string name="app_name">ProyectoEcommerDSM</string>
     <string name="main_registrarse">Registrarse</string>
     <string name="main_login">Iniciar Sesión</string>
@@ -12,4 +13,36 @@
     <string name="login_google">Ingresar con Google</string>
     <string name="forgot_correo">Correo Electrónico</string>
     <string name="forgot_restablecer">Restablecer Contraseña</string>
+
+    <!--Strings relacionados a la funcionalidad interna de la app-->
+
+    <!--Menu superior-->
+    <string name="inicio">Inicio</string>
+    <string name="nuevos">Nuevos</string>
+    <string name="vender">Vender Articulo</string>
+    <string name="historial">Historial</string>
+
+    <!--Activity_home-->
+    <string name="bienvenida">Menú Principal</string>
+    <string name="texto">Texto Genérico</string>
+
+    <!--Activity_ingresar_articulo-->
+    <string name="mensaje">Ingresar Articulo a Vender</string>
+    <string name="foto">Subir Foto</string>
+    <string name="nombre">Nombre Articulo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="precio">Precio</string>
+    <string name="add">Agregar Venta</string>
+
+    <!--Activity_info_articulos-->
+    <string name="title">Titulo del producto</string>
+    <string name="price">Precio: $</string>
+    <string name="quantity">00.00</string>
+    <string name="texto1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="date">02 enero 2020</string>
+    <string name="user">Olivia Cartagena</string>
+    <string name="texto2">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including</string>
+    <string name="date2">12 septiembre 2020</string>
+    <string name="user2">Amelia Montero</string>
 </resources>

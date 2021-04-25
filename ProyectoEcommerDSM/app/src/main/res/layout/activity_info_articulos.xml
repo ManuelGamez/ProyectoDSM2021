@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
-            android:text="Titulo del producto"
+            android:text="@string/title"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingTop="4dp"
-                android:text="Precio: $"
+                android:text="@string/price"
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingTop="4dp"
-                android:text="00.00"
+                android:text="@string/quantity"
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="4dp"
-            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the"
+            android:text="@string/texto1"
             android:textColor="#000000" />
 
 
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="4dp"
             android:paddingBottom="10dp"
-            android:text="Comentarios"
+            android:text="@string/comentarios"
             android:textAllCaps="true"
             android:textColor="#000000"
             android:textSize="18sp"
@@ -145,13 +145,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="02 enero 2020" />
+            android:text="@string/date" />
 
         <TextView
             android:id="@+id/tvUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Olivia Cartagena"
+            android:text="@string/user"
             android:textColor="#000000" />
 
         <TextView
@@ -159,20 +159,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:text="Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including" />
+            android:text="@string/texto2" />
 
         <TextView
             android:id="@+id/tvFecha2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="12 septiembre 2020" />
+            android:text="@string/date2" />
 
         <TextView
             android:id="@+id/tvUsuario2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Amelia Montero"
+            android:text="@string/user2"
             android:textColor="#000000" />
 
         <TextView
@@ -180,7 +180,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="10dp"
-            android:text="Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including" />
+            android:text="@string/texto1" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"

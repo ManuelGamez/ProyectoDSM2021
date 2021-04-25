@@ -1,87 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".home">
 
-    <TextView
-        android:id="@+id/nombreCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre Usuario"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido/a Menu Principal"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
-
-    <ImageView
-        android:id="@+id/FotoCorreo"
-        android:layout_width="93dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/fotoCorreo"
-        android:layout_width="93dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ScrollView
-        android:layout_width="288dp"
-        android:layout_height="465dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883">
-
-        <LinearLayout
-            android:id="@+id/llBotonera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <HorizontalScrollView
-        android:layout_width="384dp"
-        android:layout_height="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037">
+        android:id="@+id/tabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        >
 
         <TableRow
             android:layout_width="wrap_content"
@@ -91,36 +25,97 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFEB3B"
                 android:onClick="Inicio"
-                android:text="Inicio"
-                android:textColor="#1E1D1D" />
+                android:text="@string/inicio"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/white"
+                />
 
             <Button
                 android:id="@+id/agregarBTN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#F44336"
-                android:text="Nuevos"
-                android:textColor="#FFFFFF" />
+                android:text="@string/nuevos"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/white"
+                />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#8BC34A"
                 android:onClick="AgregarProductos"
-                android:text="Vender Articulo"
-                android:textColor="#FFFFFF" />
+                android:text="@string/vender"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/white"
+                />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#E91E63"
-                android:text="Historial"
-                android:textColor="#FFFFFF" />
+                android:text="@string/historial"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/white"
+                />
         </TableRow>
     </HorizontalScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenida"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tabla"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/FotoCorreo"
+        android:layout_width="93dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/textView"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/nombreCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto"
+        android:textColor="#000000"
+        android:layout_below="@id/textView"
+        android:layout_toRightOf="@id/FotoCorreo"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="288dp"
+        android:layout_height="465dp"
+        android:layout_below="@id/FotoCorreo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/llBotonera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            />
+    </ScrollView>
+
+
+
+</RelativeLayout>
