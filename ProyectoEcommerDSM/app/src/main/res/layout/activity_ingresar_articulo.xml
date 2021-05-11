@@ -173,17 +173,32 @@
         android:textSize="19sp"
         />
 
+    <EditText
+        android:id="@+id/editCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDescripcion"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/cantidad"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="19sp" />
+
     <Button
         android:id="@+id/registrarartbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add"
-        android:textColor="@color/white"
-        android:background="@drawable/buttons"
         android:layout_below="@id/editPrecio"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="67dp"
         android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
         android:padding="10dp"
-        />
+        android:text="@string/add"
+        android:textColor="@color/white" />
 </RelativeLayout>

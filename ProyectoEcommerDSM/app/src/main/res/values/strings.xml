@@ -32,6 +32,7 @@
     <string name="nombre">Nombre Articulo</string>
     <string name="descripcion">Descripción</string>
     <string name="precio">Precio</string>
+    <string name="cantidad">Cantidad</string>
     <string name="add">Agregar Venta</string>
 
     <!--Activity_info_articulos-->

@@ -23,6 +23,18 @@ public class pojo {
 
     String Descripcion;
     String Precio;
+    String Cantidad;
+
+    public String getCantidad() {
+        return Cantidad;
+    }
+
+    public void setCantidad(String cantidad) {
+        Cantidad = cantidad;
+    }
+
+
+
     public int getID() {
         return ID;
     }

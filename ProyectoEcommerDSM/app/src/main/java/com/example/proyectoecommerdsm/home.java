@@ -156,4 +156,9 @@ public class home extends AppCompatActivity implements GoogleApiClient.OnConnect
         Intent intent   = new Intent(this,home.class);
         startActivity(intent);
     }
+
+    public void Historial(View view) {
+        Intent intent   =   new Intent(this,Historial.class);
+        startActivity(intent);
+    }
 }

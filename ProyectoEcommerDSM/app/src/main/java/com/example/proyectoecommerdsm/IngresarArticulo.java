@@ -46,10 +46,10 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
     //Componentes :::::::::::::::::::::::::::::::
     private ImageView fotoperfil;
     private TextView nameText;
-    private EditText mEditTextArticulo,mEditTextDescripcion,mEditTextPrecio;
+    private EditText mEditTextArticulo,mEditTextDescripcion,mEditTextPrecio,mEditTextCantidad;
     private Button mGuardarDatos,SubirImagen;
     private ImageButton FotoArticulo;
-    public String Articulo="",Descripcion="",Precio="",FotoImagen="";
+    public String Articulo="",Descripcion="",Precio="",FotoImagen="", Cantidad="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,7 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
         mEditTextArticulo       =   (EditText)findViewById(R.id.editArticulo);
         mEditTextDescripcion    =   (EditText)findViewById(R.id.editDescripcion);
         mEditTextPrecio         =   (EditText)findViewById(R.id.editPrecio);
+        mEditTextCantidad       =   (EditText)findViewById(R.id.editCantidad);
         mGuardarDatos           =   (Button)findViewById(R.id.registrarartbtn);
         SubirImagen             =   (Button)findViewById(R.id.subirfotobtn);
         FotoArticulo            =   (ImageButton) findViewById(R.id.Articuloimage);
@@ -83,6 +84,7 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
                 Articulo     =   mEditTextArticulo.getText().toString();
                 Descripcion  =   mEditTextDescripcion.getText().toString();
                 Precio       =   mEditTextPrecio.getText().toString();
+                Cantidad     =   mEditTextCantidad.getText().toString();
                 //Guardo todo en FIREBASE ::::::::::::::
                 SubiendoDatos(Articulo, Descripcion, Precio,FotoImagen);
             }
@@ -111,6 +113,7 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
         datosUsuario.put("Articulos",Articulo);
         datosUsuario.put("Descripcion",Descripcion);
         datosUsuario.put("Precio",Precio);
+        datosUsuario.put("Cantidad",Cantidad);
         datosUsuario.put("Imagen",Foto);
         datosUsuario.put("ID",n);
         mRootReference.child("Articulos").push().setValue(datosUsuario);
@@ -121,6 +124,7 @@ public class IngresarArticulo extends AppCompatActivity implements GoogleApiClie
         mEditTextArticulo.getText().clear();
         mEditTextDescripcion.getText().clear();
         mEditTextPrecio.getText().clear();
+        mEditTextCantidad.getText().clear();
     }
 
     //::::::::::::::::::::::: Metodo para Subir la imagen ::::::::::::::::::::::::::::::::::::
